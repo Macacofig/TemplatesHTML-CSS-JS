@@ -1,0 +1,23 @@
+.row1{
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+}
+
+.rowreverse1{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.column1{
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.columnreverse1{
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column-reverse;
+}
