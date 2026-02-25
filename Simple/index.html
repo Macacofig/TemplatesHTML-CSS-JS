@@ -7,22 +7,165 @@
 </head>
 <body>
     <h1></h1>
-    <table>
-        <th>
-            <td>Propiedad</td>
-            <td>Aplicacion</td>
-        </th>
+    <table class ="table">
         <tr>
-            <td>
-                Usando p con estilo "color:"
-            </td>
+            <th>Aplicacion</th>
+            <th>Propiedad</th>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> TEXTO </td>
+        </tr>
+        <tr>
             <td>
                  <p id="Text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, natus?</p>
             </td>
+            <td>
+                <p class="text-details">Usando p con estilo "color:" color del texto</p>
+            </td>
         </tr>
-   
-    <p id="Text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, natus?</p>
-    <p id="Text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, natus?</p>
+        <tr>
+            <td>
+                <p id="Text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, natus?</p>
+            </td>
+            <td>
+                <p class="text-details">Usando p con estilo "font-family:" para fuente de texto</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="Text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, natus?</p>
+            </td>
+            <td>
+                <p class="text-details">Usando p con estilo "font-size:" tamaño del texto</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="Text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, natus?</p>
+            </td>
+            <td>
+                <p class="text-details">Usando p con estilo "text-align:" alineación del texto</p>
+                <p class="text-details">left: Alinear el texto a la izquierda</p>
+                <p class="text-details">center: Alinear el texto al centro</p>
+                <p class="text-details">right: Alinear el texto a la derecha</p>
+                <p class="text-details">start: Alinear el texto al inicio del contenedor</p>
+                <p class="text-details">end: Alinear el texto al final del contenedor</p>
+                <p class="text-details">justify: Justificar el texto (distribuirlo uniformemente)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="Text5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, natus?</p>
+            </td>
+            <td>
+                <p class="text-details">Usando p con estilo "font-weight:" grosor del texto</p>
+                <p class="text-details">normal: Es el valor por defecto</p>
+                <p class="text-details">bold: Es la negrita</p>
+                <p class="text-details">bolder: Es más negrita que bold</p>
+                <p class="text-details">lighter: Es más delgada que normal</p>
+                <p class="text-details">Medidas: px, em, rem</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="Text6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, natus?</p>
+            </td>
+            <td>
+               <p class="text-details">Usando p con estilo "text-decoration:" decoración del texto</p>
+                <p class="text-details">none: Es el valor por defecto</p>
+                <p class="text-details">underline: Subraya el texto</p>
+                <p class="text-details">overline: Dibuja una línea sobre el texto</p>
+                <p class="text-details">line-through: Dibuja una línea a través del texto</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="Text71">Lorem ipsum dolor sit (PORCENTAJE: Respecto font-size_Padre (sirve para mas elementos))</p>
+                <p id="Text72">Lorem ipsum dolor sit (EM = Xem * font-size_Padre) Acumulativo</p>
+                <p id="Text73">Lorem ipsum dolor sit (REM  = Xrem * font-size_Raiz (html)) No acumulativo</p>
+                <p id="Text74">Lorem ipsum dolor sit (PX)</p>
+                <p id="Text75">Lorem ipsum dolor sit (VH = Porcentaje de la altura de la ventana del navegador)</p>
+                <p id="Text76">Lorem ipsum dolor sit (VW = Porcentaje del ancho de la ventana del navegador)</p>
+            </td>
+            <td>
+               <p class="text-details">Usando p con estilo medidas</p>
+                <p class="text-details">px: Es el valor por defecto</p>
+                <p class="text-details">%: Relativo al tamaño del contenedor padre</p>
+                <p class="text-details">em: Relativo al tamaño de fuente del elemento</p>
+                <p class="text-details">rem: Relativo al tamaño de fuente del elemento raíz</p>
+                <p class="text-details">vh: Relativo al tamaño de la ventana del navegador (viewport height)</p>
+                <p class="text-details">vw: Relativo al tamaño de la ventana del navegador (viewport width)</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> CONTENEDORES DIV : Todos Tienen width para su ancho y height para su alto </td>
+        </tr>
+        <tr>
+           <td>
+                <div id="content1"></div>
+           </td>
+            <td>
+                <p class="text-details">Usando div con estilo "background-color:" color de fondo</p>
+                <p class="text-details">background-color: Es el color de fondo del elemento</p>
+            </td>
+        </tr>
+        <tr>
+           <td>
+                <div id="content2"></div>
+           </td>
+            <td>
+                <p class="text-details">Usando div con estilo "border" Es el borde del elemento </p>
+                <p class="text-details">parametro (grosor, tipo, color) </p>
+                <p class="text-details">tipos del borde:</p>
+                <p class="text-details">dotted: Aplica una línea punteada</p>
+                <p class="text-details">dashed: Aplica una línea discontinua</p>
+                <p class="text-details">solid: Aplica una línea continua</p>
+                <p class="text-details">double: Aplica dos líneas continuas</p>
+                <p class="text-details">groove: Aplica un borde en relieve</p>
+                <p class="text-details">ridge: Aplica un borde en relieve invertido</p>
+                <p class="text-details">inset: Aplica un borde que parece hundido</p>
+                <p class="text-details">outset: Aplica un borde que parece sobresaliente</p>
+            </td>
+        </tr>
+        <tr>
+           <td>
+                <div id="content3"></div>
+           </td>
+            <td>
+                <p class="text-details">Usando div con estilo "border-radius:" radio de las esquinas redondeadas</p>
+            </td>
+        </tr>
+
+        <tr>
+           <td>
+                <div id="content41">
+                    <div id="content42">
+                        <div id="content43"></div>
+                    </div>
+                </div>
+                </div>
+           </td>
+            <td>
+                <p class="text-details">Usando div con estilo "padding y margin" </p>
+                <p class="text-details">padding: Es el espacio interno del elemento</p>
+                <p class="text-details">margin: Es el espacio externo del elemento</p>
+            </td>
+        </tr>
+
+        <tr>
+           <td>
+                <div id="content5"></div>
+           </td>
+            <td>
+                <p class="text-details">Usando div con estilo "box-sizing:" control del tamaño del elemento</p>
+                <p class="text-details">border-box incluye padding y border en el tamaño del elemento (margin no esta incluido)</p>
+                <p class="text-details">width: 1000px; height: 100px; padding: 20px; margin: 10px; </p>
+                <p class="text-details">con: ancho total: 1020px con margin || altura total: 120px  con margin</p>
+                <p class="text-details">sin: ancho total: 1060px con margin || altura total: 160px con margin </p>
+                <p class="text-details">Si existe margin-bottom de un elemento y otro con margin-top el mayor se aplica (Margin colapse)</p>
+            </td>
+        </tr>
     </table>
+    
 </body>
 </html>
