@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1></h1>
+    <table class ="table">
+        <tr>
+            <th>Aplicacion</th>
+            <th>Propiedad</th>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> LISTAS </td>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                </ol>
+                <ul>
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                </ul>
+            </td>
+            <td>
+                <p class="text-details">ul -> Listas desorndenadas con *</p>
+                <p class="text-details">ol -> Listas ordenadas con números</p>
+                <p class="text-details">li -> Elemento de una lista</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> ENLACES </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://www.google.com">Google</a>
+                <p>link rel="stylesheet" href="styles.css</p>
+            </td>
+            <td>
+                <p class="text-details">a -> Etiqueta de enlace</p>
+                <ul class = "list-details">
+                    <li>a href -> Atributo que especifica la URL del enlace</li>
+                </ul>
+                <p class="text-details" style = >link -> Etiqueta para enlazar recursos externos</p>
+                <ul class = "list-details">
+                    <li>rel -> Atributo que especifica la relación entre el documento actual y el recurso enlazado</li>
+                    <li>href -> Atributo que especifica la URL del recurso enlazado</li>
+                </ul>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" class = "Row-tittle"> TABLAS </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="margin: 10px;">
+                    <table class="table">
+                        <tr>
+                            <th>Encabezado 1</th>
+                            <th>Encabezado 2</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Linea unida con colspan="2"</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>
+                <p class="text-details">table -> Etiqueta para crear una tabla</p>
+                <ul class = "list-details">
+                    <li>tr -> Etiqueta para crear una fila en la tabla</li>
+                    <li>th -> Etiqueta para crear una celda de encabezado en la tabla</li>
+                    <li>td -> Etiqueta para crear una celda de datos en la tabla</li>
+                    <li>colspan -> Atributo que especifica el número de columnas que una celda debe abarcar</li>
+                </ul>
+            </td>   
+        </tr>
+        
+        <tr>
+            <td colspan="2" class = "Row-tittle"> FORMULARIOS </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="https://example.com/submit" method="POST">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre"><br><br>
+                    <label>Email:</label>
+                    <input type="email" name="email"><br><br>
+                    <label>Contraseña:</label>
+                    <input type="password" name="contraseña"><br><br>
+                    <label>Numero:</label>
+                    <input type="number" name="numero"><br><br>
+                    <label>CheckBox:</label><br>
+                    <input type="checkbox" name="checkbox">Opcion1</input><br>
+                    <input type="checkbox" name="checkbox">Opcion2</input><br>
+                    <input type="checkbox" name="checkbox">Opcion3</input><br><br>
+                    <label>Radio:</label><br>
+                    <input type="radio" name="radio">Opcion1</input><br>
+                    <input type="radio" name="radio">Opcion2</input><br>
+                    <label>File:</label>
+                    <input type="file" name="archivo"><br><br>
+                    <label>Caja de Seleccion</label>
+                    <select name="seleccion">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select><br><br>
+                    <label>Texto en area</label>
+                    <textarea name="texto"></textarea><br><br>
+                    <input type="submit" value="Enviar con input">
+                    <button type="submit">Enviar con button</button>
+                </form>
+            </td>
+            <td>
+                <p class="text-details">form -> Etiqueta para crear un formulario</p>
+                <ul class="list-details">
+                    <li>action -> Atributo que especifica la URL a la que se enviarán los datos del formulario</li>
+                    <li>method -> Atributo que especifica el método HTTP para enviar los datos del formulario (GET o POST)</li>
+                </ul>
+                <br>
+                <ul class = "list-details">
+                    <li>label -> Etiqueta para definir una etiqueta para un elemento de formulario</li>
+                    <li>input -> Etiqueta para crear un campo de entrada en el formulario</li>
+                    <li>type -> Atributo que especifica el tipo de campo de entrada</li>
+                    <ul>
+                        <li>text -> Campo de texto para ingresar texto</li>
+                        <li>email -> Campo de texto para ingresar una dirección de correo electrónico</li>
+                        <li>password -> Campo de texto para ingresar una contraseña</li>
+                        <li>number -> Campo de texto para ingresar un número</li>
+                        <li>checkbox -> Campo de selección que permite seleccionar una o más opciones</li>
+                        <li>radio -> Campo de selección que permite seleccionar solo una opción</li>
+                        <li>file -> Campo de entrada para seleccionar un archivo desde el dispositivo</li>
+                    </ul>
+                    <li>name -> Atributo que especifica el nombre del campo de entrada</li>
+                    <li>value -> Atributo que especifica el valor del campo de entrada</li>
+                    <li>textarea -> Etiqueta para crear un área de texto en el formulario</li>
+                    <li>button -> Etiqueta para crear un botón en el formulario funciona como input submit pero mejor</li>
+                    <li>select -> Etiqueta para crear una caja de selección en el formulario</li>
+                    <li>select option -> Etiqueta para crear una opción dentro de una caja de selección</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class = "Row-tittle"> SEMANTICAS </td>
+        </tr>
+        <tr>
+            <td>
+                <p>header -> Encabezado de la página</p>
+                <p>nav -> Barra de navegación</p>
+                <p>main -> Contenido principal de la página</p>
+                <p>section -> Sección del contenido</p>
+                <p>article -> Artículo o entrada de blog</p>
+                <p>aside -> Contenido relacionado o barra lateral</p>
+                <p>footer -> Pie de página</p>
+            </td>
+            <td>
+                <p class="text-details">Las etiquetas semánticas ayudan a estructurar el contenido de una página web y mejorar su accesibilidad y SEO.</p>
+            </td>
+
+        <tr>
+            <td colspan="2" class = "Row-tittle"> FIGURES</td>
+        </tr>
+        <tr>
+            <td>
+                <figure>
+                    <img 
+                    src="https://static.vecteezy.com/system/resources/previews/047/656/219/non_2x/abstract-logo-design-for-any-corporate-brand-business-company-vector.jpg" 
+                    alt="Imagen de ejemplo"
+                    width="100" height="100">
+                    <figcaption>Figura 1: Imagen de ejemplo</figcaption>
+                </figure>
+                <figure>
+                    <iframe 
+                    width="200" 
+                    height="100" 
+                    src="https://www.youtube.com/embed/pCPYb7KPoUc?si=hOvsL_wRaaEdpQYp" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+                    <figcaption>Figura 2: Video de ejemplo</figcaption>
+                </figure>
+                <figure>
+                    <video controls width="200">
+                        <source 
+                        src="https://www.w3schools.com/html/mov_bbb.mp4" 
+                        type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                    <figcaption>Figura 3: Video de ejemplo</figcaption>
+                </figure>
+                <figure>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="audio/mp4">
+                        Tu navegador no soporta audio HTML5.
+                    </audio>
+                    <figcaption>Figura 4: Audio de ejemplo</figcaption>
+                </figure>
+            </td>
+            <td>
+                <p class="text-details">figure -> Etiqueta para agrupar contenido relacionado con una imagen o ilustración</p>
+                <p class="text-details">figcaption -> Etiqueta para proporcionar un título o descripción a una figura</p>
+                <p class="text-details">img -> Etiqueta para insertar una imagen en la página</p>
+                <ul class = "list-details">
+                    <li>src -> Atributo que especifica la URL de la imagen</li>
+                    <li>alt -> Atributo que proporciona una descripción alternativa de la imagen para mejorar la accesibilidad</li>
+                </ul>
+                <p class="text-details">iframe -> Etiqueta para insertar una ventana independiente de otra pagina</p>
+                <ul class = "list-details">
+                    <li>src -> Atributo que especifica la URL de la página que se mostrará dentro del iframe</li>
+                    <li>title -> Atributo que proporciona un título para el iframe</li>
+                    <li>frameborder -> Atributo que especifica si se debe mostrar un borde alrededor del iframe (0 para no mostrar, 1 para mostrar)</li>
+                    <li>allow -> Atributo que especifica las características permitidas dentro del iframe, como acelerómetro, autoplay, clipboard-write, encrypted-media, gyroscope, picture-in-picture y web-share</li>
+                    <li>referrerpolicy -> Atributo que especifica la política de referencia para el iframe</li>
+                    <li>allowfullscreen -> Atributo booleano que permite que el iframe se muestre en pantalla completa</li>
+                </ul>
+                <p class="text-details">video -> Etiqueta para insertar un video en la página</p>
+                <ul class = "list-details">
+                    <li>controls -> Atributo booleano que muestra los controles del video</li>
+                    <li>width -> Atributo que especifica el ancho del video</li>
+                    <li>height -> Atributo que especifica la altura del video</li>
+                </ul>
+                <p class="text-details">audio -> Etiqueta para insertar un audio en la página</p>
+                <ul class = "list-details">
+                    <li>controls -> Atributo booleano que muestra los controles del audio</li>
+                </ul>
+                <p class="text-details">video/audio source -> Etiqueta para especificar la fuente de un video</p>
+                <ul class = "list-details">
+                    <li>src -> Atributo que especifica la URL del video</li>
+                    <li>type -> Atributo que especifica el tipo de video (por ejemplo, video/mp4)</li>
+                </ul>
+                
+            </td>
+        </tr>        
+    </table>
+    
+</body>
+</html>
