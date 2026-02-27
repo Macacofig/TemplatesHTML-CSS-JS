@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1></h1>
+    <table class ="table">
+        <tr>
+            <th>Aplicacion</th>
+            <th>Propiedad</th>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> VARIABLES </td>
+        </tr> 
+        <tr>
+            <td>
+                <p style="text-align: start; font-size: 20px;">$background : red</p>
+                <p style="text-align: start; font-size: 20px;">.texto{</p>
+                <p style="text-align: start; font-size: 20px;">background : $background;</p>
+                <p style="text-align: start; font-size: 20px;">}</p>
+            </td>
+            <td>
+                <p class="text-details">Se les llama con $</p>
+            </td>
+        </tr> 
+        <tr>
+            <td colspan="2" class = "Row-tittle"> ANIDADCION Y & </td>
+        </tr> 
+        <tr>
+            <td>
+                <p style="text-align: start; font-size: 20px;">.nav{</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 20px;">a{</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 40px;">color : red;</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 40px;">&:hover{</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 60px;">color : red;</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 40px;">}</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 20px;">}</p>
+                <p style="text-align: start; font-size: 20px;">}</p>
+            </td>
+            <td>
+                <p class="text-details">El & se refiere al padre, en este caso a para agregarle un hover</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> PARTIALS </td>
+        </tr> 
+        <tr>
+            <td>
+                <p style="text-align: start; font-size: 20px;">_header.scss</p>
+                <p style="text-align: start; font-size: 20px;">$color-fondo: red;</p>
+                <p style="text-align: start; font-size: 20px;">$color-letras: blue;</p>
+            </td>
+            <td>
+                <p class="text-details">Los partials son archivos que se importan a otros archivos, puede contener variables, mixins, funciones, etc.</p>
+            </td>
+        </tr>  
+        <tr>
+            <td colspan="2" class = "Row-tittle"> MIXINS </td>
+        </tr>  
+        <tr>
+            <td>
+                <p style="text-align: start; font-size: 20px;">@mixin nombre-mixin($parametro){</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 20px;">propiedad : $parametro;</p>
+                <p style="text-align: start; font-size: 20px;">}</p>
+            </td>
+            <td>
+                <p class="text-details">Los mixins son bloques de codigo que se pueden reutilizar, se les puede enviar parámetros</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> USOS DE @ </td>
+        </tr>   
+        <tr>
+            <td>
+                <p style="text-align: start; font-size: 20px;">@use 'header'; -> header.$variable</p>
+                <p style="text-align: start; font-size: 20px;">@ forward 'header';</p>
+                <p style="text-align: start; font-size: 20px;">@include nombre-mixin($parametro);</p>
+                <p style="text-align: start; font-size: 20px;">@extend .clase;</p>
+                <p style="text-align: start; font-size: 20px;">%placeholder{</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 20px;">propiedad : valor;</p>
+                <p style="text-align: start; font-size: 20px;">}</p>
+            </td>
+            <td>
+                <ul>
+                    <li class="list-details">use : Permite importar partials</li>
+                    <li class="list-details">forward : Permite reexportar partials</li>
+                    <li class="list-details">include : Permite incluir mixins</li>
+                    <li class="list-details">extend : Permite extender estilos de otros selectores</li>
+                    <li class="list-details">%(placeholder) : Permite crear placeholders reutilizables</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> CALCULOS </td>
+        </tr> 
+        <tr>
+            <td>
+                <p style="text-align: start; font-size: 20px;">.caja{</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 20px;">width : calc(100px / 2) ;</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 20px;">height : 100px + 50px;</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 20px;">background : red;</p>
+                <p style="text-align: start; font-size: 20px;">}</p>
+            </td>
+            <td>
+                <p class="text-details">Sass permite realizar cálculos matemáticos para asignar valores a las propiedades, como sumar, restar, multiplicar o dividir unidades de medida. Si no se usa una misma medida se usa calc()</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> FUNCIONES </td>
+        </tr> 
+        <tr>
+            <td>
+                <p style="text-align: start; font-size: 20px;">.caja{</p>
+                <p style="text-align: start; font-size: 20px; margin-left: 20px;">background : color.adjust($color-fondo, $luminosidad: 20%);</p>
+                <p style="text-align: start; font-size: 20px;">}</p>
+            </td>
+            <td>
+                <p class="text-details">Se aplica luminosidad</p>
+                <ul>
+                    <li class="list-details">color.adjust (color, luminosidad) -> Permite ajustar la luminosidad de un color</li>
+                    <li class="list-details">color.mix (color1, color2, porcentaje) -> Permite combinar dos colores</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
