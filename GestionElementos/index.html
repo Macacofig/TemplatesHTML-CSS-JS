@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1></h1>
+    <table class ="table">
+        <tr>
+            <th>Aplicacion</th>
+            <th>Propiedad</th>
+        </tr>
+        <tr>
+            <td colspan="2" class = "Row-tittle"> DISPLAY </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="display-block">Block</span>
+                <p class="display-inline">Inline</p>
+                <p class="display-inline-block">Inline Block</p>
+                <p class="display-none">None</p>
+                <div class="display-block">Block despues de none (p que no se muestra) y antes visibility (p que no se muestra)</div>
+                <p class="display-visibility">Visibility Hidden</p>
+                <div class="display-block">Block despues de none (p que no se muestra) y visibility (p que no se muestra)</div>
+            </td>
+            <td> 
+                <p class="text-details">Display permite controlar cómo se muestra un elemento en la página</p>
+                <ul class="list-details">
+                    <li>block: Hace que el elemento se muestre como un bloque de contenido (ocupa toda la línea)</li>
+                    <li>inline: Muestra el elemento como un elemento en línea (ocupa solo el espacio necesario)</li>
+                    <li>inline-block: Muestra el elemento como un bloque en línea (ocupa solo el espacio necesario pero se puede width y height)</li>
+                    <li>none: Oculta el elemento</li>
+                    <li>visibility:hidden : Hace que el elemento sea invisible pero ocupa espacio en la página</li>
+                </ul>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" class = "Row-tittle"> POSITION </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="position-static">Static</div>
+                <div class="position-relative">Relative</div>
+                <div class="position-absolute">Absolute</div>
+                <div class="position-fixed">Fixed</div>
+            </td>
+            <td>
+                <p class="text-details">Position permite controlar la posición de un elemento en la página</p>
+                <ul class="list-details">
+                    <li>static: Es el valor por defecto, el elemento se posiciona según el flujo normal del documento</li>
+                    <li>relative: El elemento se posiciona en relación a su posición normal, permitiendo moverlo con las propiedades top, right, bottom y left</li>
+                    <li>absolute: El elemento se posiciona en relación a su contenedor más cercano que tenga una posición diferente a static</li>
+                    <li>fixed: El elemento se posiciona en relación al viewport, permaneciendo fijo incluso al hacer scroll</li>
+                </ul>
+            </td>
+        </tr>
+             
+    </table>
+    
+</body>
+</html>
