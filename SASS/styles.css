@@ -1,0 +1,27 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td {
+    width: 50%;
+    border: 1px solid black; /* Opcional: para visualizar mejor */
+    text-align: center;
+}
+
+.Row-tittle{
+    font-size: 40px;
+}
+.text-details
+{
+    margin : 0;
+    font-size: 20px;
+}
+
+.list-details
+{
+    margin : 0;
+    text-align: left;
+}
+
+
