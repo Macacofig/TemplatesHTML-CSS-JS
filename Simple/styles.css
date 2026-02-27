@@ -61,6 +61,13 @@
 #Text82{
     font-size: 20px;
 }
+
+#Text91{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
 #content1{
     background-color: lightblue;
     width: 100%;
@@ -112,3 +119,13 @@
     margin: 10px;            /* Espacio EXTERNO */
     box-sizing: border-box; /* El tamaño total del elemento incluye el padding y el border */
 }
+
+
+#content6{
+    background-color: lightcoral;
+    width: 1000px;
+    height: 100px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
