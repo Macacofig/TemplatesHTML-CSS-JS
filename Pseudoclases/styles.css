@@ -1,0 +1,86 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td {
+    width: 50%;
+    border: 1px solid black; /* Opcional: para visualizar mejor */
+    text-align: center;
+}
+
+.Row-tittle{
+    font-size: 40px;
+}
+.text-details
+{
+    margin : 0;
+    font-size: 20px;
+}
+
+.list-details
+{
+    margin : 0;
+    text-align: left;
+}
+
+
+.text1{
+    font-size: 20px;
+}
+.text1:hover{
+    color: red;
+}
+
+.text2{
+    font-size: 20px;
+}
+.text2:active{
+    color: blue;
+}
+
+.text3{
+    font-size: 20px;
+    margin: 5px;
+}
+.text3:focus{
+    color: green;
+}
+
+.text4{
+    font-size: 20px;
+}
+.text4:visited{
+    color: purple;
+}
+
+.text5{
+    font-size: 20px;
+}
+.text5:link{
+    color: orange;
+}
+
+.text6{
+    font-size: 20px;
+}
+.text6::after{
+    content: " (after)";
+    color: gray;
+}
+
+.text7{
+    font-size: 20px;
+}
+.text7::before{
+    content: "(Before)";
+    color: gray;
+}
+
+.text8{
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+.text8:hover{
+    background-color: yellow;
+}
