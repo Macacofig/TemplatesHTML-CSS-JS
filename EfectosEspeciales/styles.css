@@ -1,0 +1,54 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td {
+    width: 50%;
+    border: 1px solid black; /* Opcional: para visualizar mejor */
+    text-align: center;
+}
+
+.Row-tittle{
+    font-size: 40px;
+}
+.text-details
+{
+    margin : 0;
+    font-size: 20px;
+}
+
+.list-details
+{
+    margin : 0;
+    text-align: left;
+}
+
+.image1{
+    float:left;
+}
+.image2{
+    float:right;
+}
+.image3{
+    float:none;
+}
+
+.image1::after, .image2::after, .image3::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.image21{
+    overflow: hidden;
+    max-height: 27px;
+}
+.image22{
+    overflow: scroll;
+    max-height: 60px;
+}
+.image23{
+    overflow: auto;
+    max-height: 40px;
+}
