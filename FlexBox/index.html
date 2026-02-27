@@ -1,31 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../FlexBox/style.css">
-    <title>Document</title>
+    <title>Flexbox Demo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class = "row1">
-        <p>utilizando flexbox row</p>
-    </div>
-    <br>
-    <div class = "rowreverse1">
-        <p>utilizando flexbox row-reverse</p>
-    </div>
-    <br>
-    <div class = "column1">
-        <p>1 utilizando flexbox column</p>
-        <p>2 utilizando flexbox column</p>
-        <p>3 utilizando flexbox column</p>
-        <p>4 utilizando flexbox column</p>
-    </div>
-    <br>
-    <div class = "columnreverse1">
-        <p>1 utilizando flexbox column-reverse</p>
-        <p>2 utilizando flexbox column-reverse</p>
-        <p>3 utilizando flexbox column-reverse</p>
-        <p>4 utilizando flexbox column-reverse</p>
-    </div>
+
+<h1>Propiedades de Flexbox</h1>
+
+<table class="table">
+    <tr>
+        <th>Aplicación</th>
+        <th>Propiedad</th>
+    </tr>
+
+    <!-- FLEX DIRECTION -->
+    <tr>
+        <td>
+            <div class="box direction">
+                <div>1</div><div>2</div><div>3</div>
+            </div>
+        </td>
+        <td>flex-direction: row | column : Permite definir la dirección principal de los elementos flexibles (puede ser reverse)</td>
+    </tr>
+
+    <!-- FLEX WRAP -->
+    <tr>
+        <td>
+            <div class="box wrap">
+                <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+            </div>
+        </td>
+        <td>
+            <p>flex-wrap: Permite que los elementos flexibles se envuelvan en múltiples líneas</p>
+            <ul>
+                <li>nowrap: No envuelve los elementos flexibles</li>
+                <li>wrap: Envuelve los elementos flexibles en múltiples líneas</li>
+                <li>wrap-reverse: Envuelve los elementos flexibles en múltiples líneas en orden inverso</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- FLEX FLOW -->
+    <tr>
+        <td>
+            <div class="box flow">
+                <div>1</div><div>2</div><div>3</div><div>4</div>
+            </div>
+        </td>
+        <td>flex-flow: direction wrap: Permite definir la dirección principal y el envoltorio de los elementos flexibles</td>
+    </tr>
+
+    <!-- JUSTIFY CONTENT -->
+    <tr>
+        <td>
+            <div class="box justify">
+                <div>1</div><div>2</div><div>3</div>
+            </div>
+        </td>
+        <td>
+            justify-content: Alinear los elementos en el contenedor flex horizontalmente
+            <ul>
+                <li>start: Alinea los elementos al inicio del contenedor</li>
+                <li>center: Alinea los elementos al centro del contenedor</li>
+                <li>end: Alinea los elementos al final del contenedor</li>
+                <li>space-around: Distribuye los elementos con espacio uniforme alrededor</li>
+                <li>space-between: Distribuye los elementos con espacio uniforme entre ellos</li>
+                <li>space-evenly: Distribuye los elementos con espacio uniforme entre ellos y alrededor</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- ALIGN ITEMS -->
+    <tr>
+        <td>
+            <div class="box align-items">
+                <div>1</div><div>2</div><div>3</div>
+            </div>
+        </td>
+        <td>
+            <p>align-items: alinear los elementos en el contenedor flex verticalmente</p>
+            <ul>
+                <li>flex-start: Alinea los elementos al inicio del contenedor</li>
+                <li>center: Alinea los elementos al centro del contenedor</li>
+                <li>flex-end: Alinea los elementos al final del contenedor</li>
+                <li>stretch: Estira los elementos para llenar el contenedor (por defecto)</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- ALIGN CONTENT -->
+    <tr>
+        <td>
+            <div class="box align-content">
+                <div>1</div><div>2</div><div>3</div><div>4</div>
+            </div>
+        </td>
+        <td>
+            <p>align-content: Alinear los elementos en el contenedor flex verticalmente cuando hay múltiples líneas</p>
+            <ul>
+                <li>flex-start: Alinea los elementos al inicio del contenedor</li>
+                <li>center: Alinea los elementos al centro del contenedor</li>
+                <li>flex-end: Alinea los elementos al final del contenedor</li>
+                <li>space-around: Distribuye los elementos con espacio uniforme alrededor</li>
+                <li>space-between: Distribuye los elementos con espacio uniforme entre ellos</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- FLEX GROW -->
+    <tr>
+        <td>
+            <div class="box grow">
+                <div class="grow1">1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </td>
+        <td>
+            <p>>flex-grow: Cuan de espacio extra se asigna a los elementos flexibles</p>
+            <ul>
+                <li>0: No crece (por defecto)</li>
+                <li>1: Crece para llenar el espacio disponible</li>
+                <li>2: Crece el doble</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- FLEX SHRINK -->
+    <tr>
+        <td>
+            <div class="box shrink">
+                <div class="shrink1">1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </td>
+        <td>
+            <p>flex-shrink: Cuanto puede encogerse un elemento flexible</p>
+            <ul>
+                <li>0: No se encoge (por defecto)</li>
+                <li>1: Se encoge para llenar el espacio disponible</li>
+                <li>2: Se encoge el doble que un elemento con flex-shrink: 1</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- FLEX BASIS -->
+    <tr>
+        <td>
+            <div class="box basis">
+                <div class="basis1">1</div>
+                <div>2</div>
+            </div>
+        </td>
+        <td>
+            <p>flex-basis: Define el tamaño inicial de un elemento flexible</p>
+            <ul>
+                <li>auto: El tamaño inicial es el tamaño del contenido</li>
+                <li>0: El tamaño inicial es cero</li>
+                <li>150px: El tamaño inicial es 150px</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- GAP -->
+    <tr>
+        <td>
+            <div class="box gap">
+                <div>1</div><div>2</div><div>3</div>
+            </div>
+        </td>
+        <td>
+            <p>gap: Define el espacio entre los elementos flexibles</p>
+        </td>
+    </tr>
+
+    <!-- ALIGN SELF -->
+    <tr>
+        <td>
+            <div class="box align-self">
+                <div>1</div>
+                <div class="self">2</div>
+                <div>3</div>
+            </div>
+        </td>
+        <td>
+            <p>align-self: Alinear un elemento flexible dentro del contenedor flex</p>
+            <ul>
+                <li>auto: Usa el valor de align-items del contenedor</li>
+                <li>flex-start: Alinea al inicio del contenedor</li>
+                <li>center: Alinea al centro del contenedor</li>
+                <li>flex-end: Alinea al final del contenedor</li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- ORDER -->
+    <tr>
+        <td>
+            <div class="box order">
+                <div class="order3">1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </td>
+        <td>
+            <p>order: Define el orden de los elementos flexibles dentro del contenedor</p>
+            <ul>
+                <li>0: El orden por defecto</li>
+                <li>1: El elemento se coloca después de los elementos con order 0</li>
+                <li>-1: El elemento se coloca antes de los elementos con order 0</li>
+            </ul>
+        </td>
+    </tr>
+
+</table>
+
 </body>
+</html>

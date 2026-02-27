@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    background: #f2f2f2;
+    height: 100px;
+}
+
+.box div {
+    background: steelblue;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* flex-direction */
+.direction {
+    flex-direction: column;
+}
+
+/* flex-wrap */
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* flex-flow */
+.flow {
+    flex-flow: row wrap;
+}
+
+/* justify-content */
+.justify {
+    justify-content: space-between;
+}
+
+/* align-items */
+.align-items {
+    align-items: center;
+}
+
+/* align-content */
+.align-content {
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+/* flex-grow */
+.grow1 {
+    flex-grow: 1;
+}
+
+/* flex-shrink */
+.shrink {
+    width: 200px;
+}
+.shrink1 {
+    flex-shrink: 0;
+}
+
+/* flex-basis */
+.basis1 {
+    flex-basis: 150px;
+}
+
+/* gap */
+.gap {
+    gap: 15px;
+}
+
+/* align-self */
+.align-self {
+    align-items: flex-start;
+}
+.self {
+    align-self: flex-end;
+}
+
+/* order */
+.order3 {
+    order: 3;
+}
